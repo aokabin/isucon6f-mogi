@@ -1,4 +1,4 @@
-package: github.com/isucon/isucon6-final/webapp/go
+package: github.com/aokabin/isucon6f
 import:
 - package: github.com/go-sql-driver/mysql
   version: v1.2
