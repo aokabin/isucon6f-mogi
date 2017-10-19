@@ -1,5 +1,5 @@
 import express from 'express';
-import https from 'https';
+import http from 'http';
 import fs from 'fs';
 import path from 'path';
 import React from 'react';
@@ -104,8 +104,8 @@ app.get('*', (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 443;
-https.createServer(options, app).listen(PORT);
+const PORT = process.env.PORT || 3000;
+http.createServer(app).listen(PORT);
 
 function createHtml(appHtml, scriptTag, csrfToken) {
   return `<!DOCTYPE html>
