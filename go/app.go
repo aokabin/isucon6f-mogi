@@ -183,7 +183,7 @@ func outputError(w http.ResponseWriter, err error) {
 }
 
 func postAPICsrfToken(w http.ResponseWriter, r *http.Request) {
-	fmt.log("Access to /api/csrf_token POST")
+	fmt.Println("Access to /api/csrf_token POST")
 
 	query := "INSERT INTO `tokens` (`csrf_token`) VALUES"
 	query += " (SHA2(CONCAT(RAND(), UUID_SHORT()), 256))"
@@ -218,7 +218,7 @@ func postAPICsrfToken(w http.ResponseWriter, r *http.Request) {
 }
 
 func getAPIRooms(w http.ResponseWriter, r *http.Request) {
-	fmt.log("Access to /api/rooms")
+	fmt.Println("Access to /api/rooms")
 
 	query := "SELECT `room_id`, MAX(`id`) AS `max_id` FROM `strokes`"
 	query += " GROUP BY `room_id` ORDER BY `max_id` DESC LIMIT 100"
@@ -264,7 +264,7 @@ func getAPIRooms(w http.ResponseWriter, r *http.Request) {
 }
 
 func postAPIRooms(w http.ResponseWriter, r *http.Request) {
-	fmt.log("Access to /api/rooms POST")
+	fmt.Println("Access to /api/rooms POST")
 
 	t, err := checkToken(r.Header.Get("x-csrf-token"))
 
@@ -333,7 +333,7 @@ func postAPIRooms(w http.ResponseWriter, r *http.Request) {
 }
 
 func getAPIRoomsID(ctx context.Context, w http.ResponseWriter, r *http.Request) {
-	fmt.log("Access to /api/rooms/:id")
+	fmt.Println("Access to /api/rooms/:id")
 
 	idStr := pat.Param(ctx, "id")
 	id, err := strconv.ParseInt(idStr, 10, 64)
@@ -384,7 +384,7 @@ func getAPIRoomsID(ctx context.Context, w http.ResponseWriter, r *http.Request) 
 }
 
 func getAPIStreamRoomsID(ctx context.Context, w http.ResponseWriter, r *http.Request) {
-	fmt.log("Access to /api/stream/rooms/:id")
+	fmt.Println("Access to /api/stream/rooms/:id")
 
 	w.Header().Set("Content-Type", "text/event-stream")
 
@@ -481,7 +481,7 @@ func getAPIStreamRoomsID(ctx context.Context, w http.ResponseWriter, r *http.Req
 }
 
 func postAPIStrokesRoomsID(ctx context.Context, w http.ResponseWriter, r *http.Request) {
-	fmt.log("Access to /api/stream/rooms/:id POST")
+	fmt.Println("Access to /api/stream/rooms/:id POST")
 
 	t, err := checkToken(r.Header.Get("x-csrf-token"))
 
