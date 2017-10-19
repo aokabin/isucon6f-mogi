@@ -1,0 +1,90 @@
+    1  ls
+    2  cd webapp/
+    3  ls
+    4  ln -s docker-compose-go.yml docker-compose.yml
+    5  rm docker-compose.yml
+    6  ls
+    7  ln -s docker-compose-go.yml docker-compose.yml
+    8  docker-compose up --build
+    9* docker-compose up 
+   10  docker-compose up --build
+   11  curl http://localhost/
+   12  curl http://localhost/api/rooms
+   13  mysql -u root -p < sql/00_create_database.sql 
+   14  mysql -u root -p
+   15  ls
+   16  sudo su
+   17  mysql -u root -p < sql/00_create_database.sql
+   18  ls sql/
+   19  mysql -u root -p < sql/0*
+   20  ls 
+   21  ls sql/
+   22  ls sql/ | xargs -l{} mysql -u root -p password < {}
+   23  ls sql/ | xargs -l# mysql -u root -p password < #
+   24  ls sql/ | xargs -I# mysql -u root -p password < #
+   25  ls sql/ | xargs -I{} mysql -u root -p password < {}
+   26  ls sql/ | xargs -I% mysql -u root -p password < %
+   27  ls sql/ | (xargs -I% mysql -u root -p password < %)
+   28  mysql -u root -p password < sql/01_max_allowed_packet.sql 
+   29  mysql -u root -p < sql/01_max_allowed_packet.sql 
+   30  mysql -u root -p < sql/01_schema.sql 
+   31  cd sql/
+   32  gunzip -c 02_initial_data.sql.gz | mysql -u root -p
+   33  cd ../
+   34  ls
+   35  curl http://localhost:8080/
+   36  curl http://localhost:808/
+   37  curl http://localhost:8080/
+   38  curl http://localhost:8080/rooms/10
+   39  curl http://localhost:8080/api/rooms
+   40  cd react/
+   41  ls
+   42  node build/server.js 
+   43  source ~/.bash_profile 
+   44  node build/server.js 
+   45  vim ~/.bash_profile 
+   46  source ~/.bas_pro
+   47  source ~/.bash_profile 
+   48  node build/server.js 
+   49  sudo -E node build/server.js 
+   50  source ~/.bash_profile 
+   51  sudo -E node build/server.js 
+   52  git status
+   53  cd ../
+   54  ls
+   55  git add .
+   56  git status
+   57  npm install && npm cache clean
+   58  cd react/
+   59  npm install && npm cache clean
+   60  NODE_ENV=production npm run build
+   61  glup default
+   62  npm install -g glup
+   63  NODE_ENV=production npm run build
+   64  npm link gulp
+   65  sudo npm link gulp
+   66  NODE_ENV=production npm run build
+   67  sudo NODE_ENV=production npm run build
+   68  sudo npm install -g glup
+   69  sudo NODE_ENV=production npm run build
+   70  sudo npm link gulp
+   71  sudo NODE_ENV=production npm run build
+   72  source ~/.bash_profile 
+   73  sudo NODE_ENV=production npm run build
+   74  ls
+   75  sudo npm install && npm cache clean
+   76  sudo NODE_ENV=production npm run build
+   77  npm i http-server
+   78  sudo NODE_ENV=production npm run build
+   79  vim package.json 
+   80  npm i http-server -D
+   81  vim package.json 
+   82  sudo npm install && npm cache clean
+   83  sudo NODE_ENV=production npm run build
+   84  vim package.json 
+   85  sudo NODE_ENV=production npm run build
+   86  sudo npm install && npm cache clean
+   87  sudo NODE_ENV=production npm run build
+   88  sudo -E node build/server.js 
+   89  history
+   90  history > ../reacth_history.log

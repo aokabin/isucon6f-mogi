@@ -1,0 +1,311 @@
+    1  ls
+    2  cd webapp/
+    3  ls
+    4  vim docker-compose-go.yml 
+    5  curl https://github.com/maeken2010.keys >> ~/.ssh/authorized_keys 
+    6  sudo vim /etc/nginx/nginx.conf
+    7  sudo su
+    8  ls
+    9  vim docker-compose-go.yml 
+   10  curl http://localhost/
+   11  curl http://localhost:443/
+   12  vim docker-compose-go.yml 
+   13  curl http://localhost/
+   14  curl http://localhost:443/
+   15  vim docker-compose-go.yml 
+   16  vim go/Dockerfile
+   17  vim docker-compose-go.yml 
+   18  vim docker-compose-react.yml 
+   19  vim docker-compose-go.yml 
+   20  curl http://localhost:443/
+   21  curl http://localhost/
+   22  vim docker-compose-go.yml 
+   23  curl http://localhost/
+   24  curl http://localhost:80/
+   25  curl http://localhost:443/
+   26  curl http://localhost:8080/
+   27  vim docker-compose-react.yml 
+   28  sudo su
+   29  sudo su mkdir /ssl
+   30  sudo mkdir /ssl
+   31  cp ssl/oreore.* /ssl/
+   32  sudo cp ssl/oreore.* /ssl/
+   33  vim docker-compose-go.yml 
+   34  vim docker-compose-react.yml 
+   35  vim react/Dockerfile
+   36  cd react/
+   37  ls
+   38  vim Dockerfile
+   39  cd ../
+   40  vim go/Dockerfile
+   41  vim docker-compose-go.yml 
+   42  vim docker-compose-react.yml.yml 
+   43  vim docker-compose-react.yml
+   44  curl https://localhost
+   45  ls
+   46  git init
+   47  git add .
+   48  git commit -m "initial commit"
+   49  git remote add origin git@github.com:aokabin/isucon6f-mogi.git
+   50  git push -u origin master
+   51  ssh-keygen -t rsa
+   52  cat ~/.ssh/id_rsa.pub 
+   53  git push -u origin master
+   54  ls
+   55  cd react/
+   56  ls
+   57  npm install && npm cache clean
+   58  sudo apt install npm
+   59  npm install && npm cache clean
+   60  nodejs
+   61  nodejs --version
+   62  npm install
+   63  npm cache clean
+   64  NODE_ENV=production npm run build
+   65  which nodejs
+   66  ln -s /usr/bin/nodejs /usr/bin/node
+   67  sudo ln -s /usr/bin/nodejs /usr/bin/node
+   68  node
+   69  node --version
+   70  npm install && npm cache clean
+   71  NODE_ENV=production npm run build
+   72  node build/server.js
+   73  API=http://go:80/ node build/server.js
+   74  ls
+   75  cd ../
+   76  ls
+   77  go --version
+   78  sudo apt install golang-go
+   79  go -v
+   80  go
+   81  sudo apt install golang-1.6-go golang-1.6-race-detector-runtime golang-1.6-src golang-go golang-race-detector-runtime golang-src pkg-config
+   82  go -v
+   83  go run go/app.go 
+   84  cd go
+   85  go get -u ./...
+   86  echo GOPATH
+   87  echo $GOPATH
+   88  export GOPATH=/home/isucon/go
+   89  mkdir ~/go
+   90  go get -u ./...
+   91  mkdir ~/go/src
+   92  go get -u ./...
+   93  go get -d ./...
+   94  cd $GOPATH
+   95  ls
+   96  cd src/
+   97  l;s
+   98  ls
+   99  cd github.com/
+  100  ls
+  101  cd ../../
+  102  cd ../webapp/go
+  103  ls
+  104  go run app.go 
+  105  sudo add-apt-repository ppa:gophers/archive
+  106  sudo apt update
+  107  sudo apt-get install golang-1.9-go
+  108  go -v
+  109  go version
+  110  wichi go
+  111  which go
+  112  vim ~/.bashrc 
+  113  sudo su 
+  114  go version
+  115  source ~/.zshrc
+  116  source ~/.bashhrc
+  117  source ~/.bashrc
+  118  go version
+  119  exit
+  120  go version
+  121  sudo su 
+  122  cd webapp/go/
+  123  ls
+  124  go get -d ./...
+  125  go run app.go 
+  126  go build -o app
+  127  glide install
+  128  go get sudo add-apt-repository ppa:masterminds/glide && sudo apt-get update
+  129  sudo add-apt-repository ppa:masterminds/glide && sudo apt-get update
+  130  sudo apt-get install glide
+  131  glide install
+  132  $GOPATH
+  133  vim ~/.bash_profile
+  134  source ~/.bash_profile 
+  135  glide install
+  136  go build -o app .
+  137  cd ../
+  138  mkdir /home/isucon/go/src/github.com/aokabin/
+  139  cp -r go /home/isucon/go/src/github.com/aokabin/go
+  140  cd /home/isucon/go/src/github.com/aokabin/go
+  141  ls
+  142  go build -o app .
+  143  ./app 
+  144  lsof -i:80
+  145  sudo lsof -i:80
+  146  sudo ./app 
+  147  mysql -u root -p
+  148  mysql -u isucon -p
+  149  mysql -u root -p
+  150  sudo apt-get remove -y mysql-server && sudo apt-get purge -y mysql-server && rm -rf /var/lib/mysql
+  151  sudo apt-get remove -y mysql-server && sudo apt-get purge -y mysql-server && sudo rm -rf /var/lib/mysql
+  152  sudo apt-get autoremove -y
+  153  sudo apt-get install -y mysql-server
+  154  mysql -u root -p
+  155  mysql -u isucon -p
+  156  mysql -u root -p
+  157  cd ../
+  158  ls
+  159  pwd
+  160  ln -s ~/webapp/go ./isucon6f
+  161  ls
+  162  cd isucon6f
+  163  ls
+  164  git status
+  165  ls -la
+  166  rm go 
+  167  ls
+  168  go version
+  169  git statusa
+  170  git status
+  171  git fetch --all
+  172  git branch -r
+  173  git pull origin master
+  174  cd ../
+  175  git status
+  176  cd go/
+  177  ls
+  178  rm go app
+  179  ls
+  180  git status
+  181  cd ../isucon6f
+  182  ls
+  183  go build -o app .
+  184  go get -d ./...
+  185  go build -o app .
+  186  less app.go 
+  187  go get -d ./...
+  188  go get -u "goji.io/pat"
+  189  go build -o app .
+  190  go get -u goji.io
+  191  go build -o app .
+  192  go get -u goji/goji
+  193  go get -u github.com/goji/goji
+  194  go get github.com/goji/goji
+  195  go get goji.io
+  196  go build -o app .
+  197  cd ../
+  198  ls
+  199  rm isucon6f
+  200  go get aokabin/isucon6f-go
+  201  git clone https://github.com/aokabin/isucon6f-go
+  202  ls
+  203  cd isucon6f-go/
+  204  ls
+  205  go build -o app
+  206  go get -d ./...
+  207  go build -o app
+  208  cd ../
+  209  ls
+  210  cd go/
+  211  ls
+  212  git status
+  213  cd vendor/
+  214  ls
+  215  cd ../
+  216  ls
+  217  cd ../isucon6f-go/
+  218  ls
+  219  go get ./...
+  220  glide install
+  221  ls
+  222  go build -o app
+  223  vim glide.yaml 
+  224  cd ../
+  225  cd go/
+  226  ls
+  227  go build -o app
+  228  cd ../
+  229  ls
+  230  cd isucon6f-go/
+  231  ls
+  232  go build -o app
+  233  cd ../
+  234  rm -rf isucon6f-go/
+  235  ln -s ~/webapp/go ./isucon6f
+  236  cd isucon6f
+  237  ls
+  238  glide install
+  239  go build -o app
+  240  vim glide.yaml 
+  241  glide install
+  242  go build -o app
+  243  glide update
+  244  go build -o app
+  245  cd vendor/
+  246  ls
+  247  cd go
+  248  cd goji.io/
+  249  ls
+  250  cd ../
+  251  ls
+  252  cd ../
+  253  l;s
+  254  rm -rf vendor
+  255  go build -o app
+  256  go get goji.io
+  257  glide install
+  258  vim app.go 
+  259  go build -o app
+  260  ./app 
+  261  vim ~/.bash_profile 
+  262  source ~/.bash_profile 
+  263  go build -o app
+  264  ./app 
+  265  ls
+  266  vim ~/.bashrc 
+  267  vim ~/.bash_profile 
+  268  ./app 
+  269  vim ~/.bash_profile 
+  270  ./app 
+  271  cd ../
+  272  ls
+  273  ls -la
+  274  ./app
+  275  cd isucon6f
+  276  ./app
+  277  git status
+  278  less glide.yaml 
+  279  git reset --hard
+  280  git pull origin master
+  281  glide update
+  282  go build -o app
+  283  git pull origin master
+  284  go build -o app
+  285  ./app
+  286  go run app.go 
+  287  vim ~/.bash_profile 
+  288  source ~/.bash_profile 
+  289  go run app.go 
+  290  go build -o app
+  291  ./app 
+  292  go run app.go 
+  293  go build -o app
+  294  ./app 
+  295  go run app.go 
+  296  git status
+  297  git add .
+  298  git commit -m "Add profiler"
+  299  git push origin master
+  300  git pull origin master
+  301  git status
+  302  git add .
+  303  git commit -m "Add conf files."
+  304  git commit -m "Add conf files"
+  305  git add .
+  306  git commit -m "Add conf files"
+  307  git push origin master
+  308  ./app 
+  309  cd ~/webapp/
+  310  history 
+  311  history > golang_history.log
