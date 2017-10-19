@@ -10,6 +10,7 @@ import (
 	"os"
 	"strconv"
 	"time"
+        "net/http/pprof"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
@@ -637,6 +638,12 @@ func main() {
 	defer dbx.Close()
 
 	mux := goji.NewMux()
+mux.HandleFunc(pat.Get("/debug/pprof/"), pprof.Index)
+mux.HandleFunc(pat.Get("/debug/pprof/cmdline"), pprof.Cmdline)
+mux.HandleFunc(pat.Get("/debug/pprof/profile"), pprof.Profile)
+mux.HandleFunc(pat.Get("/debug/pprof/symbol"), pprof.Symbol)
+mux.HandleFunc(pat.Get("/debug/pprof/trace"), pprof.Trace)
+
 	mux.HandleFunc(pat.Post("/api/csrf_token"), postAPICsrfToken)
 	mux.HandleFunc(pat.Get("/api/rooms"), getAPIRooms)
 	mux.HandleFunc(pat.Post("/api/rooms"), postAPIRooms)
